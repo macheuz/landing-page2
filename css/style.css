@@ -25,20 +25,23 @@ header{
 header nav{
     float: right;
 }
+header nav.mobile-menu{
+    display: none;
+}
 header .logo{
     float: left;
     width: 160px;
     height: 40px;
     background-color: #CCCCCC;
 }
-header nav ul{
+header nav.desktop-menu ul{
     list-style-type: none;
 }
-header nav li{
+header nav.desktop-menu li{
     float: left;
     padding: 0 20px;
 }
-header nav li a{
+header nav.desktop-menu li a{
     color: white;
     text-decoration: none;
 }
@@ -61,6 +64,7 @@ section.sessao1{
     width: 100%;
     background-color: #472562;
     padding: 0 2%;
+    height: 400px;
 }
 section.sessao1 .container{
     max-width: 1000px;
@@ -69,35 +73,118 @@ section.sessao1 .container{
     float: left;
     width: 50%;
     color: white;
+    margin-top: 60px;
+    padding-left: 80px;
+    position: relative;
+    left: 55px;
+}
+.texto-sessao1 h2{
+    font-size: 26px;
 }
 .texto-sessao1 p{
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 15px;
 }
 .texto-sessao1 ul{
-    font-size: 13px;
+    font-size: 15px;
     list-style-position: inside;
 }
 .texto-sessao1 ul li{
     float: left;
     width: 100%;
+    margin-top: 8px;
 }
 .btn1-texto{
     background-color: #FF703D;
     width: 165px;
     height: 44px;
     color: white;
+    font-size: 13px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
     line-height: 44px;
     border-radius: 30px;
 }
 .device-sessao1{
     float: left;
+    position: relative;
+    top: -30px;
     width: 50%;
-    height: 300px;
+    height: 430px;
     background-image: url(../imagens/device.png);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px)
+{
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+
+    header nav.desktop-menu
+    {
+        display: none;
+    }
+    header nav.mobile-menu
+    {
+        display: block;
+    }
+
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+    }
+    .chamada1 h2{
+        font-size: 30px;
+        padding: 0 0px;
+        color: white;
+        font-weight: normal;
+    }
+    .chamada1 p{
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    section.sessao1
+    {
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .texto-sessao1
+    {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 0;
+        position: static;
+        float: none;
+        display: inline-block;
+    }
+    .texto-sessao1 ul 
+    {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .texto-sessao1 ul li 
+    {
+        float: none;
+        text-align: left;
+    }
+    .btn1-texto
+    {
+        display: inline-block;
+    }
+    .device-sessao1
+    {
+        display: none;
+    }
 }
