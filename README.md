@@ -1,1 +1,3 @@
-# landing-page2
+# Landing page de página de venda de curso online
+ Essa landing page faz parte de um dos projetos de criação de sites da plataforma de ensino Danki code.
+ Nesse projeto o objetivo é aprimorar nossas habilidades de responsividade dos sites, criação de landing pages com sobreposição de itens...
